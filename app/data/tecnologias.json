@@ -1,0 +1,74 @@
+[
+  {
+    "title": "HTML",
+    "image": "/images/html.png",
+    "description": "Linguagem de marcação para criação de páginas web.",
+    "rating": 5
+  },
+  {
+    "title": "CSS",
+    "image": "/images/css.png",
+    "description": "Estilo e design para páginas web.",
+    "rating": 3
+  },
+  {
+    "title": "JavaScript",
+    "image": "/images/js.png",
+    "description": "Linguagem de programação para a web.",
+    "rating": 3
+  },
+  {
+    "title": "JSON",
+    "image": "/images/json.jpg",
+    "description": "Formato leve de troca de dados.",
+    "rating": 4
+  },
+  {
+    "title": "SWAGGER",
+    "image": "/images/swagger.png",
+    "description": "Swagger é uma ferramenta para documentação e design de APIs.",
+    "rating": 2
+  },
+  {
+    "title": "API RESTful",
+    "image": "/images/rest.png",
+    "description": "Padrão arquitetural para comunicação entre sistemas.",
+    "rating": 4
+  },
+  {
+    "title": "GitHub",
+    "image": "/images/git.jpg",
+    "description": "Plataforma para versionamento e colaboração.",
+    "rating": 5
+  },
+  {
+    "title": "Codespaces",
+    "image": "/images/codespaces.png",
+    "description": "Ambiente de desenvolvimento na nuvem.",
+    "rating": 5
+  },
+  {
+    "title": "GitHub Pages",
+    "image": "/images/gitPages.png",
+    "description": "Serviço para hospedar sites estáticos.",
+    "rating": 4
+  },
+  {
+    "title": "React.js",
+    "image": "/images/react.png",
+    "description": "Biblioteca JavaScript para interfaces de usuário.",
+    "rating": 4
+  },
+  {
+    "title": "Next.js",
+    "image": "/images/next.png",
+    "description": "Framework React para produção.",
+    "rating": 4
+  },
+  {
+    "title": "Vercel",
+    "image": "/images/vercel.jpg",
+    "description": "Plataforma de hospedagem para projetos web.",
+    "rating": 4
+  }
+]
