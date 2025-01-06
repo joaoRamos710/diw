@@ -6,7 +6,7 @@ export async function GET() {
         }
         const produtos = await response.json();
         return new Response(JSON.stringify(produtos), { status: 200 });
-    } catch (error) {
+    } catch {
         return new Response(JSON.stringify({ error: 'Erro ao buscar os produtos.' }), { status: 500 });
     }
 }

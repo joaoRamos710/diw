@@ -24,7 +24,7 @@ export default function CardTecnologia({ tecnologia }: CardTecnologiaProps) {
         className="card-image"
       />
 
-      /* Título */
+      {/* Título */}
       <h2 className="cardTecnologias-title">{tecnologia.title}</h2>
 
       {/* Descrição */}

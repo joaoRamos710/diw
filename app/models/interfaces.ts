@@ -13,3 +13,13 @@ export interface Produto {
         count: number;
     };
 }
+
+export interface PostResponse {
+    message: string;
+    address?: string;
+    reference?: string;
+    totalCost?: number;
+    error?: string;
+    
+  }
+  

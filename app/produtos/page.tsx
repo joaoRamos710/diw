@@ -4,7 +4,7 @@ import useSWR from 'swr';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Card from '@/app/components/ProdutosCard/Card';
-import { Produto } from '@/app/models/interfaces';
+import { PostResponse, Produto } from '@/app/models/interfaces';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -21,7 +21,7 @@ export default function Produtos() {
     const [nomeError, setNomeError] = useState<string | null>(null);
     const [moradaError, setMoradaError] = useState<string | null>(null);
     const [cartError, setCartError] = useState<string | null>(null);
-    const [postResponse, setPostResponse] = useState<any | null>(null);
+    const [postResponse, setPostResponse] = useState<PostResponse | null>(null);
     const [totalCusto, setTotalCusto] = useState<number>(0);
     const [custoFinal, setCustoFinal] = useState<number | null>(null);
     const [descontoAplicado, setDescontoAplicado] = useState<number | null>(null);
@@ -129,7 +129,7 @@ export default function Produtos() {
                 setEstudante(false);
             })
             .catch(() => {
-                setPostResponse({ error: 'Erro ao realizar a compra. Tente novamente.' });
+                setPostResponse({ error: 'Erro ao realizar a compra. Tente novamente.' });;
             });
     };
 
@@ -154,7 +154,7 @@ export default function Produtos() {
 
             {/* Produtos Filtrados */}
             {filteredData.length === 0 && search ? (
-                <div className="text-center text-gray-500">Nenhum produto encontrado para "{search}".</div>
+                <div className="text-center text-gray-500">Nenhum produto encontrado para {'"'}{search}{'"'}.</div>
             ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {filteredData.map((produto) => (
