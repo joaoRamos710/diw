@@ -129,7 +129,10 @@ export default function Produtos() {
                 setEstudante(false);
             })
             .catch(() => {
-                setPostResponse({ error: 'Erro ao realizar a compra. Tente novamente.' });;
+                setPostResponse({ 
+                    message: 'Erro ao realizar a compra.', 
+                    error: 'Tente novamente.' 
+                });
             });
     };
 
